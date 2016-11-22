@@ -1,7 +1,8 @@
 public static List getMessages(int messageId)
   throws Message Exception
 {
-  SessionFactory session = new Configuration().configure().buildSessionFactory();
+  SessionFactory session = new Configuration().configure().buildSessionFactory(); //would normally be created elsewhere and made
+  //available to the app as a Java Native Directory Interface(JNDI) resource
   Session session = sessions.openSession();
   Transaction tx = null;
   try {
