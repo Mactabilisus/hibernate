@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+  "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+  <hibernate-configuration>
+    <session-factory>
+      <property name="dialect">org.hibernate.dialect.HSQLDialect</property>
+      <mapping jar="hibernate-mappings.jar"/>
+      <mapping resource="com/apress/hibernate/User.hbm.xml"/>
+    </session-factory>
+  </hibernate-configuration>
+  
